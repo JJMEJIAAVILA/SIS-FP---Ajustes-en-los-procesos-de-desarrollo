@@ -1,0 +1,106 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(-45deg, #0d1b2a, #1b263b, #0d3b66, #1b4f72);
+  background-size: 400% 400%;
+  animation: gradientFlow 15s ease infinite;
+  color: #f4f4f4;
+  line-height: 1.7;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.logo-sena {
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #00ffc8;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #f9f871;
+  margin-top: 5px;
+}
+
+section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.2);
+}
+
+h3 {
+  color: #00ffc8;
+  border-bottom: 2px solid #00ffc8;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: "• ";
+  color: #00ffc8;
+}
+
+.practice-list li {
+  margin: 5px 0;
+}
+
+.btn {
+  background: #00ffc8;
+  color: #0d1b2a;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #f9f871;
+  color: #0d1b2a;
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0,0,0,0.4);
+  font-size: 0.9rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
